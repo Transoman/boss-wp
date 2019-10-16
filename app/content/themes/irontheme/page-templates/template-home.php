@@ -114,23 +114,23 @@ get_header(); ?>
             <p>3 многофункциональных центра</p>
           </div>
           <div class="offices-slider__item swiper-slide">
-            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-1.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-2.jpg" alt="">
             <p>Общая площадь всех центров сети более 10 000 м2</p>
           </div>
           <div class="offices-slider__item swiper-slide">
-            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-1.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-3.jpg" alt="">
             <p>Комфортабельные оборудованные офисы на 2-6 человек</p>
           </div>
           <div class="offices-slider__item swiper-slide">
-            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-1.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-4.jpg" alt="">
             <p>Удобные светлые технологичные переговорные</p>
           </div>
           <div class="offices-slider__item swiper-slide">
-            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-1.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-5.jpg" alt="">
             <p>Современная офисная техника</p>
           </div>
           <div class="offices-slider__item swiper-slide">
-            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-1.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/offices/offices-6.jpg" alt="">
             <p>Оптимальная среда для роста и развития бизнеса</p>
           </div>
         </div>
@@ -280,12 +280,8 @@ get_header(); ?>
         <span>Удобно добираться, приятно работать. Идеальны для представительских целей</span></p>
       </div>
 
-      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
       <script>
-        ymaps.ready(init);
-
-        var myMap, myPlacemark;
+        var myMap;
 
         function init() {
           myMap = new ymaps.Map('map', {
@@ -380,6 +376,7 @@ get_header(); ?>
 
         }
       </script>
+      <script async defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init"></script>
     </div>
     <!-- /.container -->
   </section>
