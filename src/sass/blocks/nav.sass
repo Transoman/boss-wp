@@ -142,3 +142,18 @@
       &::before
         top: 0
         transform: rotate(-45deg)
+
+.nav-overlay
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 9
+  background-color: rgba(#000, 0.5)
+  opacity: 0
+  visibility: hidden
+  +trans
+  &.is-active
+    opacity: 1
+    visibility: visible

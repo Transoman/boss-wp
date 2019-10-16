@@ -7,6 +7,8 @@
 
 .pluses-card
   position: relative
+  display: flex
+  flex-direction: column
   max-width: 570px
   height: calc(100% - 30px)
   margin: 0 auto 30px
@@ -44,27 +46,34 @@
           &::after
             transform: translate(-50%, -50%) rotate(90deg)
       &__content
-        +r(1200)
-          padding-top: 45%
-        +r(576)
-          padding-top: 50%
+        margin-top: -45px
+        +r(480)
+          margin-top: -20px
+        &::before
+          top: -50px
+          background-image: url(images/general/pluses-wave-2.svg)
   &__img
-    position: absolute
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
     img
       width: 100%
   &__content
     position: relative
     z-index: 1
-    padding: 46% 30px 30px
-    +r(1200)
-      padding-top: 50%
+    margin-top: -75px
+    padding: 0 30px 30px
     +r(576)
       padding-right: 15px
       padding-left: 15px
+    +r(480)
+      margin-top: -20px
+    &::before
+      content: ''
+      position: absolute
+      top: -60px
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: -1
+      background: url(images/general/pluses-wave.svg) no-repeat left top
   &__title
     position: relative
     display: inline-block

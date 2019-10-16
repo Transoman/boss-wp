@@ -62,7 +62,7 @@ get_header(); ?>
     <!-- /.benefit -->
   </div>
 
-  <section class="why">
+  <section class="why" id="about">
     <div class="container">
 
       <h2 class="section-title">Почему российский малый/средний бизнес выбирает <span>готовые к заезду офисы?</span></h2>

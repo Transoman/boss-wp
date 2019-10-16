@@ -5,6 +5,17 @@
   right: 0
   z-index: 10
   padding: 20px 0
+  +trans(background, 0.3s)
+  &.fixed
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 15
+    background-color: rgba(#fff, 0.8)
+    backdrop-filter: blur(25px)
+    box-shadow: 0 0 10px rgba(#000, 0.1)
+    animation: slideDown 0.3s linear
   .container
     position: relative
     display: flex

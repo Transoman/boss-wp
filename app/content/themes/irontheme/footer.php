@@ -7,7 +7,7 @@
     $phone = get_field( 'phone', 'option' );
   ?>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
       <a href="<?php echo home_url( '/' ); ?>" class="logo footer__logo">
         <img src="<?php echo THEME_URL; ?>/images/general/logo-white.svg" width="120" alt="Boss">
@@ -49,7 +49,7 @@
 </div><!-- /.wrapper -->
 
   <div id="callback" class="modal">
-    <button type="button" class="modal__close callback__close"></button>
+    <button type="button" class="modal__close callback_close"></button>
 
     <h3 class="modal__title"><span>Заказать обратный звонок</span></h3>
 

@@ -23,35 +23,34 @@
     position: relative
     padding: 0 10px
     opacity: 0.6
-    transform: scale(0.8)
     +trans
     &.swiper-slide-active
       opacity: 1
-      transform: scale(1)
       z-index: 1
       .advantages-slider
         &__plus
           opacity: 1
         &__inner
+          width: 100%
           &::before
             opacity: 1
     &.swiper-slide-prev
       transform: translateY(30px)
-      .advantages-slider__inner
-        width: 90%
-        margin: 0 auto
     &.swiper-slide-next
       transform: translateY(-30px)
-      .advantages-slider__inner
-        width: 90%
-        margin: 0 auto
   &__inner
     position: relative
     z-index: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 90%
     height: 100%
+    margin: 0 auto
+    padding: 20px 30px
     background-color: #fff
     border-radius: 20px
-    padding: 20px 30px
+    +trans
     &::before
       content: ''
       position: absolute

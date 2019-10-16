@@ -13,23 +13,27 @@ jQuery(document).ready(function($) {
     let nav = $('.header__nav');
     let closeNav = $('.nav__close');
     let overlay = $('.nav-overlay');
+    let html = $('html');
 
     toggle.on('click', function (e) {
       e.preventDefault();
       nav.toggleClass('open');
       overlay.toggleClass('is-active');
+      html.toggleClass('menu-open');
     });
 
     closeNav.on('click', function (e) {
       e.preventDefault();
       nav.removeClass('open');
       overlay.removeClass('is-active');
+      html.removeClass('menu-open');
     });
 
     overlay.on('click', function (e) {
       e.preventDefault();
       nav.removeClass('open');
       $(this).removeClass('is-active');
+      html.removeClass('menu-open');
     });
   };
 
@@ -109,11 +113,59 @@ jQuery(document).ready(function($) {
     });
   };
 
+  $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        &&
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+
+          $('.nav').removeClass('open');
+          $('.nav-overlay').removeClass('is-active');
+          $('html').removeClass('menu-open');
+
+          let offset = $('.header').outerHeight();
+
+          $('html, body').animate({
+            scrollTop: target.offset().top - offset
+          }, 1000);
+        }
+      }
+    });
+
+  // fixed header
+  let fixedHeader = function(e) {
+    let header = $('.header');
+
+    if (e.scrollTop() > 150) {
+      header.addClass('fixed');
+    }
+    else {
+      header.removeClass('fixed');
+    }
+  };
 
   toggleNav();
   initModal();
   inputMask();
   accordion('.faq-list');
+  fixedHeader($(this));
+
+  $(window).scroll(function() {
+    fixedHeader($(this));
+  });
 
   // SVG
   svg4everybody({});

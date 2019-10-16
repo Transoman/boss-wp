@@ -87,7 +87,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "url"
         }
     ],
     "location": [
@@ -107,5 +107,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1571120428
+    "modified": 1571224087
 }

@@ -18,9 +18,13 @@
 
 /* Common styles */
 html
-  //height: 100%
   font-size: 10px
-  overflow-x: hidden
+  &.menu-open
+    +r(992)
+      overflow: hidden
+      margin-right: 17px
+      .header
+        margin-right: 17px
 
 body
   margin: 0

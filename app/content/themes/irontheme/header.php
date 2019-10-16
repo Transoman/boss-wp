@@ -28,11 +28,11 @@
         <button type="button" class="nav__close"></button>
 
         <ul class="nav-list">
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#offices">Обзор сервисных офисов</a></li>
-          <li><a href="#on-map">Мы на карте</a></li>
-          <li><a href="#advantages">Ваши преимущества</a></li>
-          <li><a href="#contact">Контакты</a></li>
+          <li><a href="/#about">О нас</a></li>
+          <li><a href="/#offices">Обзор сервисных офисов</a></li>
+          <li><a href="/#on-maps">Мы на карте</a></li>
+          <li><a href="/#advantages">Ваши преимущества</a></li>
+          <li><a href="/#contact">Контакты</a></li>
         </ul>
 
         <div class="phone nav__phone">
