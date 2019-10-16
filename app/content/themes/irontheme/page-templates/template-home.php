@@ -4,61 +4,63 @@
  */
 get_header(); ?>
 
-  <section class="hero">
-    <div class="container">
-      <div class="hero__content">
-        <h1 class="hero__title">Работайте в сервисных офисах <span>BOSS</span></h1>
-        <p class="hero__descr">освободите время, средства и силы для бизнеса</p>
+  <div class="bg-wrap">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">Работайте в сервисных офисах <span>BOSS</span></h1>
+          <p class="hero__descr">освободите время, средства и силы для бизнеса</p>
 
-        <div class="hero__btn">
-          <a href="#" class="btn callback_open">Позвонить</a>
-          <p class="hero__btn-descr">
-            <img src="<?php echo THEME_URL; ?>/images/general/line-arrow.svg" alt="">
-            Проконсультироваться <br>по подбору офиса
-          </p>
-        </div>
-      </div>
-      
-      <div class="hero__man">
-        <img src="<?php echo THEME_URL; ?>/images/content/hero-man.png" alt="">
-        <p class="hero__man-descr">Комфортные современные рабочие места для вас уже готовы!</p>
-      </div>
-      
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.hero -->
-
-  <section class="benefit">
-    <div class="container">
-
-      <div class="benefit__wrap">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="benefit__item">
-              <?php ith_the_icon( '24-hours' ); ?>
-              Доступ к рабочему месту 24/7
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="benefit__item">
-              <?php ith_the_icon( 'printer' ); ?>
-              Оборудованные сервисные зоны
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="benefit__item">
-              <?php ith_the_icon( 'consultant-services' ); ?>
-              Административная и техническая поддержка
-            </div>
+          <div class="hero__btn">
+            <a href="#" class="btn callback_open">Позвонить</a>
+            <p class="hero__btn-descr">
+              <img src="<?php echo THEME_URL; ?>/images/general/line-arrow.svg" alt="">
+              Проконсультироваться <br>по подбору офиса
+            </p>
           </div>
         </div>
-      </div>
 
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.benefit -->
+        <div class="hero__man">
+          <img src="<?php echo THEME_URL; ?>/images/content/hero-man.png" alt="">
+          <p class="hero__man-descr">Комфортные современные рабочие места для вас уже готовы!</p>
+        </div>
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="benefit">
+      <div class="container">
+
+        <div class="benefit__wrap">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="benefit__item">
+                <?php ith_the_icon( '24-hours' ); ?>
+                Доступ к рабочему месту 24/7
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="benefit__item">
+                <?php ith_the_icon( 'printer' ); ?>
+                Оборудованные сервисные зоны
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="benefit__item">
+                <?php ith_the_icon( 'consultant-services' ); ?>
+                Административная и техническая поддержка
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.benefit -->
+  </div>
 
   <section class="why">
     <div class="container">
@@ -374,7 +376,7 @@ get_header(); ?>
             });
 
           myMap.geoObjects.add(place_3);
-          myMap.setBounds(myMap.geoObjects.getBounds());
+          myMap.setBounds(myMap.geoObjects.getBounds(), {checkZoomRange:true}).then(function(){ if(myMap.getZoom() > 10) myMap.setZoom(10);});
 
         }
       </script>
