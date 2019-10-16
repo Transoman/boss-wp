@@ -1,0 +1,109 @@
+.hero
+  padding: 305px 0 180px
+  +r(1500)
+    padding: 235px 0 150px
+  +r(1400)
+    padding-top: 175px
+  +r(992)
+    padding-top: 125px
+    padding-bottom: 80px
+  .container
+    position: relative
+  &__content
+    position: relative
+    z-index: 1
+    max-width: 670px
+    +r(1200)
+      max-width: 550px
+    +r(992)
+      max-width: none
+      text-align: center
+  &__title
+    margin-bottom: 30px
+  &__descr
+    position: relative
+    margin-bottom: 60px
+    padding-left: 50px
+    font-size: 2.6rem
+    font-weight: 300
+    color: $gray
+    +r(1200)
+      font-size: 2.2rem
+    +r(992)
+      padding-left: 0
+    +r(767)
+      margin-bottom: 40px
+      font-size: 1.8rem
+    &::before
+      content: ''
+      position: absolute
+      top: 15px
+      left: 0
+      width: 30px
+      height: 2px
+      background-color: $accent
+      +r(992)
+        display: none
+  &__btn
+    display: flex
+    align-items: center
+    +r(992)
+      justify-content: center
+    +r(767)
+      flex-direction: column
+    &-descr
+      position: relative
+      margin: 0 0 0 30px
+      padding-left: 110px
+      font-size: 1.5rem
+      +r(767)
+        margin: 10px 0 0 0
+        padding: 0
+      img
+        position: absolute
+        left: 0
+        +r(767)
+          display: none
+  &__man
+    position: absolute
+    top: -200px
+    right: -50px
+    +r(1200)
+      top: -150px
+      right: -130px
+      max-width: 510px
+    +r(992)
+      display: none
+    &-descr
+      position: absolute
+      top: 56%
+      left: 50%
+      transform: translateX(-50%)
+      max-width: 330px
+      width: 100%
+      padding: 25px 20px
+      background-color: #fff
+      border-radius: 20px
+      box-shadow: 0 0 60px rgba(0, 0, 0, 0.1)
+      text-align: center
+      &::before
+        content: ''
+        position: absolute
+        top: -10px
+        left: 50%
+        transform: translateX(-50%)
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 10px 10px 10px
+        border-color: transparent transparent #ffffff transparent
+      &::after
+        content: ''
+        position: absolute
+        z-index: -1
+        top: 10px
+        right: 10px
+        bottom: 10px
+        left: 10px
+        border-radius: 10px
+        border: 1px dashed #E6E6E6

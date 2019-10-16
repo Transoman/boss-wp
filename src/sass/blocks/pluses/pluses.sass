@@ -1,0 +1,93 @@
+.pluses
+  .section-title
+    margin-top: 30px
+    margin-bottom: 30px
+  &__btn
+    text-align: center
+
+.pluses-card
+  position: relative
+  max-width: 570px
+  height: calc(100% - 30px)
+  margin: 0 auto 30px
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  overflow: hidden
+  &--minus
+    .pluses-card
+      &__title
+        color: $red
+        &-icon
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 10px
+            height: 2px
+            background-color: $red
+  &--plus
+    .pluses-card
+      &__title
+        color: $green
+        &-icon
+          &::before, &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 10px
+            height: 2px
+            background-color: $green
+          &::after
+            transform: translate(-50%, -50%) rotate(90deg)
+      &__content
+        +r(1200)
+          padding-top: 45%
+        +r(576)
+          padding-top: 50%
+  &__img
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    img
+      width: 100%
+  &__content
+    position: relative
+    z-index: 1
+    padding: 46% 30px 30px
+    +r(1200)
+      padding-top: 50%
+    +r(576)
+      padding-right: 15px
+      padding-left: 15px
+  &__title
+    position: relative
+    display: inline-block
+    margin-bottom: 20px
+    font-size: 2.4rem
+    font-weight: 600
+    &-icon
+      position: absolute
+      top: 5px
+      left: calc(100% + 10px)
+      width: 24px
+      height: 24px
+      border-radius: 50%
+      border: 1px solid $light-gray
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+      margin-bottom: 25px
+      font-size: 1.7rem
+      color: $gray
+      +r(1200)
+        margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0

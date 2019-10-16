@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^(www.)?boss.loc$
+    RewriteCond %{REQUEST_URI} !^/app/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /app/$1
+    RewriteCond %{HTTP_HOST} ^(www.)?boss.loc$
+    RewriteRule ^(/)?$ app/index.php [L]
+</IfModule>

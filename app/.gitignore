@@ -1,0 +1,4 @@
+wp/
+content/plugins/*
+content/plugins/advanced-custom-fields-pro
+local-config.php

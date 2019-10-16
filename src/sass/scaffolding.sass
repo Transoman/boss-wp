@@ -1,0 +1,139 @@
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+/* Clearfix for float elements */
+.clearfix:before,
+.clearfix:after
+  content: ''
+  display: table
+
+.clearfix:after 
+  clear: both
+
+.clearfix
+  zoom: 1 /* For IE 6/7 hasLayout */
+
+
+/* Common styles */
+html
+  //height: 100%
+  font-size: 10px
+  overflow-x: hidden
+
+body
+  margin: 0
+  padding: 0
+  height: 100%
+  min-width: 320px
+  font-family: $main-font
+  font-size: 1.6rem
+  line-height: 1.25
+  color: $main-color
+  overflow-x: hidden
+  background: url(images/general/hero-bg.jpg) no-repeat center top / 100% auto
+
+img
+  max-width: 100%
+  height: auto
+
+a
+  color: $main-color
+  +trans
+  &:hover, &:focus
+    color: $accent
+    outline: none
+    text-decoration: none
+    
+h1, h2, h3, h4, h5, h6
+  font-family: $secondary-font
+  font-weight: 300
+  line-height: 1.3
+  span
+    font-weight: 800
+h1
+  font-size: 7.2rem
+  +r(1200)
+    font-size: 6.2rem
+  +r(767)
+    font-size: 5.2rem
+  +r(576)
+    font-size: 4.2rem
+h2
+  font-size: 4.4rem
+  +r(992)
+    font-size: 3.4rem
+  +r(767)
+    font-size: 2.8rem
+h3
+  font-size: 2.6rem
+
+section
+  position: relative
+  padding: 100px 0
+  +r(992)
+    padding: 60px 0
+  +r(767)
+    padding: 40px 0
+
+/* Hidden element */
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  border: 0
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
+/* Buttons */
+.btn
+  display: inline-block
+  vertical-align: middle
+  padding: 27px 30px
+  font-family: $secondary-font
+  font-size: 2rem
+  font-weight: 600
+  color: #806633
+  text-align: center
+  background-color: $accent
+  background-image: linear-gradient(180deg, #FFE092 0%, #DBB85E 100%)
+  border: 0
+  border-radius: 10px
+  outline: none
+  text-decoration: none
+  cursor: pointer
+  user-select: none
+  transition: all .25s ease
+  text-transform: uppercase
+  letter-spacing: 0.06em
+  box-shadow: 0 20px 60px rgba(219, 184, 94, 0.5), inset 0px -4px 0px rgba(0, 0, 0, 0.1)
+  +r(576)
+    padding: 20px 25px
+    font-size: 1.8rem
+  &:hover
+    background-color: lighten($accent, 5%)
+    background-image: linear-gradient(180deg, lighten(#FFE092, 5%) 0%, #DBB85E 100%)
+    color: #806633
+  &:focus
+    background-color: darken($accent, 5%)
+    background-image: linear-gradient(180deg, #DBB85E 0%, #DBB85E 100%)
+    color: #806633
+    outline: none
+    box-shadow: 0 20px 60px rgba(219, 184, 94, 0.5), inset 0 0 0 rgba(0, 0, 0, 0.1)
+  &[disabled]
+    background-color: #e5e5e5
+    background-image: none
+    box-shadow: 0 20px 60px rgba(#e5e5e5, 0.5), inset 0 -4px 0 rgba(0, 0, 0, 0.1)
+    cursor: not-allowed
+    color: #fff
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+
+.content
+  flex: 1 0 auto

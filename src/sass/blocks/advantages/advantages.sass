@@ -1,0 +1,95 @@
+.advantages
+  padding-bottom: 210px
+  background: url(images/general/advantages-bg.jpg) no-repeat center / cover
+  +r(992)
+    padding-bottom: 100px
+  .section-title
+    margin-bottom: 260px
+    +r(1500)
+      margin-bottom: 100px
+    +r(1400)
+      margin-bottom: 60px
+
+.advantages-slider
+  height: 360px
+  margin: 0 -10px
+  &__wrap
+    width: 360px
+    +r(992)
+      margin: 0 auto
+    +r(576)
+      width: auto
+  &__item
+    position: relative
+    padding: 0 10px
+    opacity: 0.6
+    transform: scale(0.8)
+    +trans
+    &.swiper-slide-active
+      opacity: 1
+      transform: scale(1)
+      z-index: 1
+      .advantages-slider
+        &__plus
+          opacity: 1
+        &__inner
+          &::before
+            opacity: 1
+    &.swiper-slide-prev
+      transform: translateY(30px)
+      .advantages-slider__inner
+        width: 90%
+        margin: 0 auto
+    &.swiper-slide-next
+      transform: translateY(-30px)
+      .advantages-slider__inner
+        width: 90%
+        margin: 0 auto
+  &__inner
+    position: relative
+    z-index: 1
+    height: 100%
+    background-color: #fff
+    border-radius: 20px
+    padding: 20px 30px
+    &::before
+      content: ''
+      position: absolute
+      top: 10px
+      right: 10px
+      bottom: 10px
+      left: 10px
+      z-index: -1
+      border: 1px dashed $light-gray
+      border-radius: 10px
+      opacity: 0
+      +trans
+    p
+      color: $gray
+      strong
+        color: $main-color
+      &:last-child
+        margin-bottom: 0
+  &__plus
+    position: absolute
+    top: 50%
+    margin-top: -20px
+    right: -10px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background-color: #fff
+    opacity: 0
+    +trans
+    &::before, &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 14px
+      height: 2px
+      border-radius: 3px
+      background-color: $accent
+      transform: translate(-50%, -50%)
+    &::after
+      transform: translate(-50%, -50%) rotate(90deg)

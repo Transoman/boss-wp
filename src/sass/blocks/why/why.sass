@@ -1,0 +1,171 @@
+.why
+  padding-top: 200px
+  background: url(images/general/why-bg.jpg) no-repeat center top / cover
+  +r(992)
+    padding-top: 120px
+  +r(767)
+    padding-top: 80px
+  .container
+    position: relative
+  &__blockquote
+    position: relative
+    max-width: 330px
+    margin: 0
+    padding: 10px 30px
+    background-color: $main-color
+    border-radius: 10px
+    color: #fff
+    font-weight: 600
+    font-style: italic
+    +r(767)
+      margin: 0 auto 50px
+    &::before
+      content: ''
+      position: absolute
+      top: 5px
+      left: 10px
+      width: 12px
+      height: 12px
+      background: url(images/general/right-quote.svg) no-repeat center / contain
+    &::after
+      content: ''
+      position: absolute
+      bottom: 5px
+      right: 10px
+      width: 12px
+      height: 12px
+      background: url(images/general/left-quote.svg) no-repeat center / contain
+    &--2
+      position: absolute
+      bottom: 0
+      right: 12.82%
+      padding-top: 20px
+      padding-bottom: 20px
+      +r(992)
+        right: 5%
+        bottom: 100px
+      +r(767)
+        position: relative
+        right: auto
+        bottom: auto
+        max-width: 220px
+    p
+      margin: 0
+
+.why-list
+  position: relative
+  margin: 0
+  padding: 0
+  list-style: none
+  min-height: 580px
+  +r(1500)
+    min-height: 480px
+  +r(1500)
+    min-height: 520px
+  &__item
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 270px
+    height: 100px
+    padding: 15px 25px
+    background-color: #fff
+    border-radius: 20px
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1)
+    font-size: 1.5rem
+    text-align: center
+    +trans
+    +r(767)
+      position: relative
+      margin: 0 auto 50px
+    &::before
+      content: ''
+      position: absolute
+      top: 10px
+      right: 10px
+      bottom: 10px
+      left: 10px
+      border-radius: 10px
+      border: 1px dashed #E6E6E6
+      +trans
+    &:hover
+      background-color: $main-color
+      color: #fff
+      &::before
+        border-color: #4D4D4D
+      .why-list
+        &__plus
+          background-color: $main-color
+    &:nth-child(1)
+      left: 11.11%
+      top: 100px
+      +r(1500)
+        top: 80px
+      +r(992)
+        left: 5%
+      +r(767)
+        top: auto
+        left: auto
+    &:nth-child(2)
+      top: 50px
+      left: 49.57%
+      +r(1500)
+        top: 0
+      +r(992)
+        left: auto
+        right: 0
+      +r(767)
+        top: auto
+        right: auto
+    &:nth-child(3)
+      top: 320px
+      left: 38.46%
+      +r(1500)
+        top: 250px
+      +r(992)
+        left: 5%
+      +r(767)
+        top: auto
+        left: auto
+    &:nth-child(4)
+      top: 235px
+      right: 0
+      +r(1500)
+        top: 165px
+      +r(767)
+        top: auto
+        right: auto
+    &:nth-child(5)
+      bottom: 0
+      left: 0
+      +r(992)
+        left: 5%
+      +r(767)
+        bottom: auto
+        left: auto
+    p
+      position: relative
+      margin: 0
+  &__plus
+    position: absolute
+    top: -30px
+    left: 50%
+    transform: translateX(-50%)
+    width: 60px
+    height: 60px
+    background-color: #fff
+    border-radius: 50%
+    +trans
+    &::before, &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 20px
+      height: 2px
+      border-radius: 3px
+      background-color: $accent
+      transform: translate(-50%, -50%)
+    &::after
+      transform: translate(-50%, -50%) rotate(90deg)

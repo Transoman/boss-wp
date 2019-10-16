@@ -1,0 +1,50 @@
+.swiper-button-prev,
+.swiper-button-next
+  width: 60px
+  height: 60px
+  margin-top: -30px
+  border-radius: 50%
+  background-color: #fff
+  +r(767)
+    width: 40px
+    height: 40px
+    margin-top: -20px
+  &::after
+    display: none
+  &:hover
+    svg
+      fill: $accent
+  &:focus
+    outline: none
+  svg
+    width: 16px
+    height: 14px
+    fill: $main-color
+    +trans
+    +r(767)
+      width: 12px
+      height: 9px
+
+.swiper-pagination-fraction
+  color: #999999
+  .swiper-pagination-current
+    font-size: 2.4rem
+    color: $main-color
+
+.slider-controls
+  position: relative
+  min-height: 70px
+  &::before
+    content: ''
+    display: block
+    width: 90px
+    height: 2px
+    margin: 0 auto 10px
+    background-color: #fff
+  .swiper-pagination-fraction
+    bottom: 50%
+    transform: translateY(50%)
+  .swiper-button-prev
+    left: 40px
+  .swiper-button-next
+    right: 40px

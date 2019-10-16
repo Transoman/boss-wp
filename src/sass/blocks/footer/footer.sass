@@ -1,0 +1,71 @@
+.footer
+  padding: 30px 0
+  background-color: $main-color
+  .container
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  &__logo
+    @extend .header__logo
+  &__descr
+    @extend .header__descr
+    margin-right: 50px
+    border-color: #333
+  &__policy
+    margin-right: 60px
+    color: $accent
+    font-size: 1.2rem
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 0.06em
+    line-height: 1.5
+    +r(992)
+      margin-left: auto
+      margin-right: 0
+      text-align: right
+    &:hover, &:focus
+      color: rgba($accent, 0.8)
+  &__contact
+    display: flex
+    +r(992)
+      margin-top: 20px
+    +r(767)
+      width: 100%
+      justify-content: center
+    +r(480)
+      flex-direction: column
+    &-item
+      margin-right: 60px
+      +r(480)
+        margin-right: 0
+        margin-bottom: 20px
+        text-align: center
+      &:last-child
+        margin-right: 0
+        +r(480)
+          margin-bottom: 0
+    p, a
+      margin: 0
+      font-family: $secondary-font
+      font-size: 2rem
+      color: #fff
+    a
+      &:hover, &:focus
+        color: $accent
+    &-label
+      display: block
+      margin-top: 5px
+      font-size: 1.2rem
+      color: $gray
+      text-transform: uppercase
+  &__phone
+    margin-left: auto
+    +r(1200)
+      margin-top: 20px
+    +r(767)
+      width: 100%
+      margin-left: 0
+      text-align: center
+    .phone
+      &__tel
+        color: #fff

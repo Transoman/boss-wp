@@ -1,0 +1,77 @@
+.faq
+  padding-bottom: 0
+  background: $bg-color url(images/general/faq-bg.jpg) no-repeat calc(100% / 2 + 210px) -80px
+  +r(767)
+    background-image: none
+  &__btn
+    text-align: center
+
+.faq-list
+  max-width: 570px
+  margin-bottom: 60px
+  +r(767)
+    max-width: none
+  &__item
+    margin-bottom: 30px
+    background-color: #fff
+    border-radius: 35px
+    overflow: hidden
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1)
+    +r(767)
+      border-radius: 15px
+    &:last-child
+      margin-bottom: 0
+    &.active
+      .faq-list
+        &__title
+          background-color: $main-color
+          color: #fff
+        &__toggle
+          background-color: #fff
+          &::after
+            background-color: $accent
+            transform: translate(-50%, -50%) rotate(0)
+  &__title
+    position: relative
+    margin: 0
+    padding: 23px 60px 24px 30px
+    font-family: $main-font
+    font-size: 1.8rem
+    font-weight: 600
+    cursor: pointer
+    +trans
+    +r(767)
+      padding-left: 15px
+  &__toggle
+    position: absolute
+    right: 15px
+    top: 50%
+    width: 40px
+    height: 40px
+    margin-top: -20px
+    border-radius: 50%
+    background-color: $accent
+    +trans
+    &::before, &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 14px
+      height: 2px
+      border-radius: 3px
+      background-color: #fff
+      transform: translate(-50%, -50%)
+      +trans
+    &::after
+      transform: translate(-50%, -50%) rotate(90deg)
+  &__content
+    display: none
+    padding: 20px 30px
+    color: $gray
+    line-height: 1.5
+    +r(767)
+      padding: 20px 15px
+    p
+      &:last-child
+        margin-bottom: 0

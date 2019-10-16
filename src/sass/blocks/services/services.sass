@@ -1,0 +1,63 @@
+.services
+  background-color: #FCFCFC
+
+.services-card
+  display: flex
+  flex-direction: column
+  height: calc(100% - 30px)
+  margin-bottom: 30px
+  padding: 25px 30px 30px
+  background-color: #fff
+  border-radius: 10px
+  +trans
+  +r(576)
+    padding: 15px 20px 20px
+  &:hover
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1)
+  &__head
+    position: relative
+    margin-bottom: 30px
+    padding-left: 100px
+    +r(576)
+      margin-bottom: 20px
+      padding-left: 60px
+    img
+      position: absolute
+      top: -5px
+      left: -5px
+      +r(576)
+        width: 50px
+        top: 0
+  &__title
+    margin: 0
+    font-size: 2.4rem
+    font-weight: 800
+  &__descr
+    margin: 0
+    font-family: $secondary-font
+    font-size: 1.8rem
+    color: $gray
+  &__content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    flex-grow: 1
+    padding-bottom: 20px
+    border-bottom: 1px solid $light-gray
+    p
+      margin: 0
+  &__bottom
+    padding-top: 20px
+    display: flex
+    align-items: center
+    +r(480)
+      flex-direction: column
+  &__price
+    margin-left: auto
+    font-family: $secondary-font
+    font-size: 2.4rem
+    font-weight: 700
+    white-space: nowrap
+    +r(480)
+      margin-left: 0
+      margin-top: 20px

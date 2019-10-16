@@ -1,0 +1,104 @@
+.on-maps
+  .container
+    position: relative
+  .section-title
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1
+    +r(1200)
+      position: static
+  &__map
+    position: relative
+    height: 740px
+    width: 770px
+    margin-left: auto
+    border-radius: 15px
+    overflow: hidden
+    +r(1200)
+      width: 600px
+      height: 600px
+    +r(992)
+      width: auto
+    +r(576)
+      height: 400px
+      margin: 0 -15px
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background: url(images/general/on-maps-bg.png) no-repeat center / cover
+      pointer-events: none
+  &__card
+    position: absolute
+    top: 120px
+    left: 15px
+    z-index: 1
+    display: none
+    +trans
+    +r(992)
+      position: static
+      margin: 0 auto
+    &.is-active
+      display: block
+      animation: op 0.3s ease-in-out
+  &__descr
+    position: relative
+    margin-top: -80px
+    text-align: center
+    +r(1200)
+      margin-top: 0
+    p
+      margin: 0
+      font-family: $secondary-font
+      font-size: 2.4rem
+      +r(767)
+        font-size: 2.2rem
+      span
+        font-family: $main-font
+        font-size: 1.6rem
+        color: $gray
+
+.on-maps-card
+  width: 470px
+  border-radius: 20px
+  background-color: $main-color
+  color: #fff
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1)
+  +r(576)
+    width: 100%
+  &__img
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1)
+    border-radius: 20px 20px 0 0
+    overflow: hidden
+  &__title
+    padding-bottom: 10px
+    font-family: $secondary-font
+    font-size: 1.8rem
+    color: #B2B2B2
+    border-bottom: 1px solid #333232
+    strong
+      font-weight: 700
+      color: #fff
+  &__body
+    padding: 20px
+  &__list
+    margin: 20px 0 0
+    padding: 0
+    list-style: none
+    column-count: 2
+    +r(480)
+      column-count: 1
+    li
+      display: inline-block
+      vertical-align: top
+      width: 100%
+      margin-bottom: 10px
+      font-size: 1.4rem
+      line-height: 1.4
+      &:last-child
+        margin-bottom: 0
