@@ -8,19 +8,19 @@ get_header(); ?>
     <section class="hero">
       <div class="container">
         <div class="hero__content">
-          <h1 class="hero__title">Работайте в сервисных офисах <span>BOSS</span></h1>
-          <p class="hero__descr">освободите время, средства и силы для бизнеса</p>
+          <h1 class="hero__title" data-aos="fade">Работайте в сервисных офисах <span>BOSS</span></h1>
+          <p class="hero__descr" data-aos="fade" data-aos-delay="200">освободите время, средства и силы для бизнеса</p>
 
           <div class="hero__btn">
-            <a href="#" class="btn callback_open">Позвонить</a>
-            <p class="hero__btn-descr">
+            <a href="#" class="btn callback_open" data-aos="fade-up" data-aos-delay="300">Позвонить</a>
+            <p class="hero__btn-descr" data-aos="fade-left" data-aos-delay="400">
               <img src="<?php echo THEME_URL; ?>/images/general/line-arrow.svg" alt="">
               Проконсультироваться <br>по подбору офиса
             </p>
           </div>
         </div>
 
-        <div class="hero__man">
+        <div class="hero__man" data-aos="fade">
           <img src="<?php echo THEME_URL; ?>/images/content/hero-man.png" alt="">
           <p class="hero__man-descr">Комфортные современные рабочие места для вас уже готовы!</p>
         </div>
@@ -36,19 +36,19 @@ get_header(); ?>
         <div class="benefit__wrap">
           <div class="row">
             <div class="col-lg-4">
-              <div class="benefit__item">
+              <div class="benefit__item" data-aos="fade">
                 <?php ith_the_icon( '24-hours' ); ?>
                 Доступ к рабочему месту 24/7
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="benefit__item">
+              <div class="benefit__item" data-aos="fade" data-aos-delay="200">
                 <?php ith_the_icon( 'printer' ); ?>
                 Оборудованные сервисные зоны
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="benefit__item">
+              <div class="benefit__item" data-aos="fade" data-aos-delay="300">
                 <?php ith_the_icon( 'consultant-services' ); ?>
                 Административная и техническая поддержка
               </div>
@@ -62,33 +62,33 @@ get_header(); ?>
     <!-- /.benefit -->
   </div>
 
-  <section class="why" id="about">
+  <section class="why">
     <div class="container">
 
-      <h2 class="section-title">Почему российский малый/средний бизнес выбирает <span>готовые к заезду офисы?</span></h2>
+      <h2 class="section-title" id="about" data-aos="fade">Почему российский малый/средний бизнес выбирает <span>готовые к заезду офисы?</span></h2>
 
       <blockquote class="why__blockquote why__blockquote--1">
-        <p>Возможность арендовать только то пространство, которые необходимо в данный момент</p>
+        <p>Возможность арендовать то пространство, которое необходимо в данный момент</p>
       </blockquote>
 
       <ul class="why-list">
-        <li class="why-list__item">
+        <li class="why-list__item" data-aos="fade">
           <span class="why-list__plus"></span>
           <p>Продуктивность работы выше, чем дома</p>
         </li>
-        <li class="why-list__item">
+        <li class="why-list__item" data-aos="fade" data-aos-delay="100">
           <span class="why-list__plus"></span>
           <p>Налаживать полезные связи быстрее и проще, чем где-либо</p>
         </li>
-        <li class="why-list__item">
+        <li class="why-list__item" data-aos="fade" data-aos-delay="200">
           <span class="why-list__plus"></span>
           <p>Проводить рабочие <br>встречи и переговоры можно в любое время</p>
         </li>
-        <li class="why-list__item">
+        <li class="why-list__item" data-aos="fade" data-aos-delay="300">
           <span class="why-list__plus"></span>
           <p>Сервис удобнее и гибче, <br>чем в обычном офисе</p>
         </li>
-        <li class="why-list__item">
+        <li class="why-list__item" data-aos="fade" data-aos-delay="400">
           <span class="why-list__plus"></span>
           <p>В стоимость аренды уже включено обслуживание помещения</p>
         </li>
@@ -103,9 +103,9 @@ get_header(); ?>
   </section>
   <!-- /.why -->
 
-  <section class="offices" id="offices">
+  <section class="offices">
     <div class="container">
-      <h2 class="section-title"><span>Сервисные офисы BOSS</span> — современные многофункциональные центры, в которых легко и удобно работать и развивать бизнес</h2>
+      <h2 class="section-title" id="offices" data-aos="fade"><span>Сервисные офисы BOSS</span> — современные многофункциональные центры, в которых легко и удобно работать и развивать бизнес</h2>
 
       <div class="offices-slider swiper-container">
         <div class="swiper-wrapper">
@@ -149,11 +149,11 @@ get_header(); ?>
 
   <section class="services">
     <div class="container">
-      <h2 class="section-title">Спектр <span>предлагаемых решений</span></h2>
+      <h2 class="section-title" data-aos="fade">Спектр <span>предлагаемых решений</span></h2>
 
       <div class="row">
         <div class="col-lg-6 col-xl-4">
-          <div class="services-card">
+          <div class="services-card" data-aos="fade-left">
             <div class="services-card__head">
               <img src="<?php echo THEME_URL; ?>/images/content/serv-1.svg" alt="">
               <h3 class="services-card__title">Гибкое</h3>
@@ -172,7 +172,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="col-lg-6 col-xl-4">
-          <div class="services-card">
+          <div class="services-card" data-aos="fade-left" data-aos-delay="100">
             <div class="services-card__head">
               <img src="<?php echo THEME_URL; ?>/images/content/serv-2.svg" alt="">
               <h3 class="services-card__title">Стандартное</h3>
@@ -191,7 +191,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="col-lg-6 col-xl-4">
-          <div class="services-card">
+          <div class="services-card" data-aos="fade-left" data-aos-delay="200">
             <div class="services-card__head">
               <img src="<?php echo THEME_URL; ?>/images/content/serv-3.svg" alt="">
               <h3 class="services-card__title">Штаб-квартира</h3>
@@ -216,9 +216,9 @@ get_header(); ?>
   </section>
   <!-- /.services -->
 
-  <section class="on-maps" id="on-maps">
+  <section class="on-maps">
     <div class="container">
-      <h2 class="section-title">Мы на карте Москвы</h2>
+      <h2 class="section-title" id="on-maps" data-aos="fade">Мы на карте Москвы</h2>
 
       <div class="on-maps-card on-maps__card on-maps__card--1 is-active">
         <div class="on-maps-card__img">
@@ -228,7 +228,7 @@ get_header(); ?>
           <div class="on-maps-card__title"><strong>ВЭБ АРЕНА</strong>, 3-я Песчаная улица 2А, Golden Tower, 11-14 этажи, 400 рабочих мест.</div>
           <ul class="on-maps-card__list">
             <li>900 метров до станции МЦК «Зорге»</li>
-            <li>Подземная, структурная, гостевая парковки на 1450 м/мест</li>
+            <li>Подземная, структурная и гостевая парковки <br>на 1450 м/мест</li>
             <li>Общая площадь комплекса ― 171700 м2</li>
             <li>1,9 км до станции МЦК «ЦСКА»</li>
             <li>Современные инженерные системы</li>
@@ -240,7 +240,7 @@ get_header(); ?>
 
       <div class="on-maps-card on-maps__card on-maps__card--2">
         <div class="on-maps-card__img">
-          <img src="<?php echo THEME_URL; ?>/images/content/maps-card.jpg" alt="">
+          <img src="<?php echo THEME_URL; ?>/images/content/maps-card-2.jpg" alt="">
         </div>
         <div class="on-maps-card__body">
           <div class="on-maps-card__title"><strong>БЦ «КРИСТАЛЛ»</strong>, ул. Кировоградская, 21А, 6 этаж, 350 рабочих мест.</div>
@@ -250,7 +250,7 @@ get_header(); ?>
             <li>Площадь офисных помещений ― 43 000 м2</li>
             <li>Наземный/подземный паркинг на 293 м/места</li>
             <li>Потолки 4,2 м</li>
-            <li>Просторные лобби</li>
+            <li>Просторное лобби</li>
             <li>Развитая внутренняя инфрастурктура</li>
           </ul>
         </div>
@@ -258,14 +258,14 @@ get_header(); ?>
 
       <div class="on-maps-card on-maps__card on-maps__card--3">
         <div class="on-maps-card__img">
-          <img src="<?php echo THEME_URL; ?>/images/content/maps-card.jpg" alt="">
+          <img src="<?php echo THEME_URL; ?>/images/content/maps-card-3.jpg" alt="">
         </div>
         <div class="on-maps-card__body">
           <div class="on-maps-card__title"><strong>БЦ «Алые паруса»</strong>, Москва, Авиационная улица, 77, корпус 2</div>
           <ul class="on-maps-card__list">
             <li>2220,7 м2 площадей</li>
             <li>Три уровня расположения офисных помещений</li>
-            <li>Отдельный вход с улица Авиационной</li>
+            <li>Отдельный вход <br>с Авиационной улицы</li>
             <li>Свободная планировка</li>
             <li>Панорамные окна по периметру</li>
             <li>32 машиноместа в подземном паркинге</li>
@@ -273,7 +273,7 @@ get_header(); ?>
         </div>
       </div>
 
-      <div id="map" class="on-maps__map"></div>
+      <div id="map" class="on-maps__map" data-aos="fade-left"></div>
 
       <div class="on-maps__descr">
         <p>Сервисные офисы BOSS расположены в престижных бизнес-центрах <br>
@@ -384,56 +384,56 @@ get_header(); ?>
 
   <section class="provided">
     <div class="container">
-      <h2 class="section-title">В сервисных офисах BOSS <span>мы уже предусмотрели <br>и подготовили для вас:</span></h2>
+      <h2 class="section-title" data-aos="fade">В сервисных офисах BOSS <span>мы уже предусмотрели <br>и подготовили для вас:</span></h2>
 
       <div class="row">
         <div class="col-xl-8 col-lg-7">
           <div class="provided-list">
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade">
               <?php ith_the_icon( 'wifi-router', 'provided-list__icon' ); ?>
               <p>Современные инженерные сети, включая безлимитный интернет</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="100">
               <?php ith_the_icon( 'poster', 'provided-list__icon' ); ?>
               <p>Образовательные <br>и развлекательные мероприятия</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="200">
               <?php ith_the_icon( 'network', 'provided-list__icon' ); ?>
-              <p>Коворкинг в зоне open space и виртуальные офисы</p>
+              <p>Коворкинг в зоне open space</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="300">
               <?php ith_the_icon( 'presentation', 'provided-list__icon' ); ?>
               <p>Переговорные комнаты <br>и конференц-залы</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="400">
               <?php ith_the_icon( 'employees', 'provided-list__icon' ); ?>
               <p>Бухгалтерские и юридические услуги</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="500">
               <?php ith_the_icon( 'stove', 'provided-list__icon' ); ?>
               <p>Полностью оборудованную кухню</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="600">
               <?php ith_the_icon( 'tea', 'provided-list__icon' ); ?>
               <p>Воду, чай, кофе без ограничений</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="700">
               <?php ith_the_icon( 'secretary', 'provided-list__icon' ); ?>
               <p>Секретарское обслуживание</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="800">
               <?php ith_the_icon( 'support', 'provided-list__icon' ); ?>
               <p>Техническую поддержку</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="900">
               <?php ith_the_icon( 'office-worker', 'provided-list__icon' ); ?>
               <p>Персональные офисы</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="1000">
               <?php ith_the_icon( 'web-design', 'provided-list__icon' ); ?>
-              <p>Виртуальный офис</p>
+              <p>Виртуальные офисы</p>
             </div>
-            <div class="provided-list__item">
+            <div class="provided-list__item" data-aos="fade" data-aos-delay="1100">
               <?php ith_the_icon( 'email', 'provided-list__icon' ); ?>
               <p>Почтовые услуги</p>
             </div>
@@ -441,7 +441,7 @@ get_header(); ?>
         </div>
 
         <div class="col-xl-4 col-lg-5">
-          <div class="provided__form-wrap">
+          <div class="provided__form-wrap" data-aos="fade-left">
             <h3><span>Творческая бизнес атмосфера</span> <br>это приятный бонус!</h3>
             <p>Проконсультируйтесь по подбору сервисного офиса</p>
 
@@ -454,9 +454,9 @@ get_header(); ?>
   </section>
   <!-- /.provided -->
 
-  <section class="advantages" id="advantages">
+  <section class="advantages" >
     <div class="container">
-      <h2 class="section-title">«И все-таки, зачем мне это нужно? <br><span>Почему именно сервисные офисы BOSS?»</span></h2>
+      <h2 class="section-title" id="advantages" data-aos="fade">«И все-таки, зачем мне это нужно? <br><span>Почему именно сервисные офисы BOSS?»</span></h2>
 
       <div class="advantages-slider__wrap">
         <div class="advantages-slider swiper-container">
@@ -525,7 +525,7 @@ get_header(); ?>
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <div class="pluses-card pluses-card--minus">
+          <div class="pluses-card pluses-card--minus" data-aos="fade-left">
             <div class="pluses-card__img">
               <img src="<?php echo THEME_URL; ?>/images/content/pluses-1.jpg" alt="">
             </div>
@@ -544,7 +544,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="pluses-card pluses-card--plus">
+          <div class="pluses-card pluses-card--plus" data-aos="fade-left" data-aos-delay="100">
             <div class="pluses-card__img">
               <img src="<?php echo THEME_URL; ?>/images/content/pluses-2.jpg" alt="">
             </div>
@@ -564,8 +564,8 @@ get_header(); ?>
         </div>
       </div>
 
-      <h2 class="section-title">А что <span>выбираете вы?</span></h2>
-      <div class="pluses__btn">
+      <h2 class="section-title" data-aos="fade">А что <span>выбираете вы?</span></h2>
+      <div class="pluses__btn" data-aos="fade-up" data-aos-delay="100">
         <a href="#" class="btn callback_open">Позвонить и проконсультироваться</a>
       </div>
     </div>
@@ -575,13 +575,13 @@ get_header(); ?>
 
 <?php $faqs = get_any_post( 'faq', -1 );
 if ($faqs->have_posts()): ?>
-  <section class="faq" id="faq">
+  <section class="faq">
     <div class="container">
-      <h2 class="section-title">Нас часто <span>спрашивают...</span></h2>
+      <h2 class="section-title" data-aos="fade">Нас часто <span>спрашивают...</span></h2>
 
       <div class="faq-list">
         <?php $i = 0; while ($faqs->have_posts()): $faqs->the_post(); ?>
-          <div class="faq-list__item<?php echo $i++ == 0 ? ' active' : ''; ?>">
+          <div class="faq-list__item<?php echo $i == 0 ? ' active' : ''; ?>" data-aos="fade" data-aos-delay="<?php echo $i++ * 100; ?>">
             <h3 class="faq-list__title">
               <?php the_title(); ?>
               <span class="faq-list__toggle"></span>
@@ -593,13 +593,9 @@ if ($faqs->have_posts()): ?>
         <?php endwhile; wp_reset_postdata(); ?>
       </div>
 
-      <div class="faq__btn">
+      <div class="faq__btn" data-aos="fade-up">
         <a href="#" class="btn callback_open">Позвонить и задать свой вопрос</a>
       </div>
-
-      <p class="dev">
-        <a href="http://bestslide.pro" target="_blank">сделано в bestslide.pro</a>
-      </p>
     </div>
     <!-- /.container -->
   </section>

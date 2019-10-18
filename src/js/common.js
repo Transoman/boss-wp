@@ -4,7 +4,8 @@ global.jQuery = require('jquery');
 let svg4everybody = require('svg4everybody'),
   popup = require('jquery-popup-overlay'),
   iMask = require('imask'),
-  Swiper = require('swiper');
+  Swiper = require('swiper'),
+  AOS = require('aos');
 
 jQuery(document).ready(function($) {
   // Toggle nav menu
@@ -139,7 +140,7 @@ jQuery(document).ready(function($) {
           let offset = $('.header').outerHeight();
 
           $('html, body').animate({
-            scrollTop: target.offset().top - offset
+            scrollTop: target.offset().top - (offset + 20)
           }, 1000);
         }
       }
@@ -162,6 +163,10 @@ jQuery(document).ready(function($) {
   inputMask();
   accordion('.faq-list');
   fixedHeader($(this));
+  AOS.init({
+    once: true,
+    duration: 1000,
+  });
 
   $(window).scroll(function() {
     fixedHeader($(this));
